@@ -31,27 +31,11 @@ img {
     max-width: 100%;
 }
 
-/* LAYOUT */
-.container {
-    width: 1140px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.row {
-    display: flex;
-}
-
-
 
 /* TEXT */
 .text-center {
     text-align: center;
 }
-
-
-/* HEADER */
-
 
 .lessons .col img {
     height: 200px;
@@ -88,22 +72,10 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
-/* ? minore uguale di 768px */
-@media screen and (max-width: 768px){
-
-    .container{
-        max-width: 768px;
-    }
-
-
-}
-
-
-   /* ? minore uguale di 568px */
-@media screen and (max-width: 480px){
-
     .container{
         width: 400px;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 
     .row{
@@ -154,7 +126,25 @@ img {
       }
 
 
+
+
+/* ? Magiore uguale di 768px */
+@media screen and (min-width: 768px){
+
+    .container{
+        max-width: 768px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: row ;
+        justify-content: center;
+    }
+
+
 }
+
+
 
 
 
@@ -213,7 +203,11 @@ img {
 }
 
 
+/* BAckground Colors  */
 
+.bg-blu {
+    background-color: #0084fd;
+}
 
 
 
