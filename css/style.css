@@ -1,0 +1,232 @@
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+
+
+h2 {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    color: #fffffe;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* LAYOUT */
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+}
+
+
+
+/* TEXT */
+.text-center {
+    text-align: center;
+}
+
+
+/* HEADER */
+
+
+.lessons .col img {
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+/* STEPS SECTION */
+.steps {
+    margin: 3rem 0;
+    padding: 3rem 0;
+    color: #232946;
+}
+
+.steps h2,
+.steps h3 {
+    color: #232946;
+}
+
+.steps .col {
+    width: calc(100% / 3);
+    background-color: #b5ddff;
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+.steps .col img {
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+
+
+/************************************************
+    SOLUZIONE RESPONSIVE
+ ************************************************/
+
+/* ? minore uguale di 768px */
+@media screen and (max-width: 768px){
+
+    .container{
+        max-width: 768px;
+    }
+
+
+}
+
+
+   /* ? minore uguale di 568px */
+@media screen and (max-width: 480px){
+
+    .container{
+        width: 400px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+    }
+
+    .lessons .container{
+        padding: 1rem 0;;
+    }
+
+
+    .lessons .col {
+        width: 100%;
+      }
+
+      .steps .col {
+        width: 100%;
+      }
+
+      .col {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 5rem;
+      }
+
+      h2 {
+        margin-bottom: 0;
+      }
+
+      .why-us .col-left {
+        width: 100%;
+      }
+
+      .why-us .col-right {
+        width: 100%;
+      }
+
+      .why-us {
+        background-color: black;
+        margin:0;
+        padding: 2rem 0;
+      }
+
+      .steps {
+        margin: 0;
+      }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FLOAT Rules */
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.float-left{
+    float:left;
+}
+
+.float-right{
+    float:right;
+}
+
+/* Flex Rules */
+.flex-between-centered{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column-space-around{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flex-cener-wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
