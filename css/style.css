@@ -145,7 +145,10 @@ img {
     padding: 1rem;
 }
 
-
+.strategic img {
+    max-width: 90%;
+    margin: auto;
+    }
 
  /*  Section Testimonials */
  
@@ -160,6 +163,7 @@ img {
      border-radius: 60px;
      text-align: center;
    }
+
  
  
  .testimo-img img{
@@ -182,15 +186,13 @@ img {
   padding: 1rem;
 }
 
-
-.strategic img {
-    max-width: 90%;
-    margin: auto;
-    }
-
 .testimonials h3 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
+}
+
+.testimonials .card {
+    margin-top: 2rem;
 }
 
 
@@ -244,9 +246,14 @@ h2 {
     /* About US*/
 
 
+.linkedin{
+    width: 200px;
+  font-size: large;
+}
 
-
-
+#about-title{
+    font-size: 3rem;
+}
 
 
 
@@ -362,11 +369,24 @@ h2 {
         text-align: start;
      }
 
+
+
+
      /* Benefits */
 
+     .benefits .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+      }
 
-
-
+      
+     .benefits .col{
+        margin: 1rem;
+        width: calc(100% / 2 - 2rem);text-align: start;
+     }
 
 
 
@@ -380,7 +400,9 @@ h2 {
 
     }
 
-
+    #about-title{
+        font-size: 4rem;
+    }
 
 
 
@@ -464,12 +486,41 @@ h2 {
     display: flex;
     align-items: center;
   }
+
+.testimonials .row {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
 /* <!-- Benefits --> */
 
+.benefits .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .benefits .col{
+    margin: 1rem;
+    width: calc(100% / 3 - 2rem);text-align: start;
+ }
+
+
 /* <!--  About US --> */
-     
+
+
+
+
     .about-us .container{
         display: flex;}
+
+        #about-title{
+            font-size: 6rem;
+        }
+
 
 /* <!-- Section Its Free --> */
 
